@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1493210297 source:c:\users\michael\desktop\cab301 assignment 2\main.cpp
+	<iostream>
+	<MinDistance.h>
+	<MinDistance2.h>
+
+1493209689 c:\users\michael\desktop\cab301 assignment 2\include\mindistance.h
+
+1493209882 c:\users\michael\desktop\cab301 assignment 2\include\mindistance2.h
+
+1493211028 source:c:\users\michael\desktop\cab301 assignment 2\src\fileoutput.cpp
+	"FileOutput.h"
+
+1493210981 c:\users\michael\desktop\cab301 assignment 2\include\fileoutput.h
+	<iostream>
+	<fstream>
+
+1493209689 source:c:\users\michael\desktop\cab301 assignment 2\src\mindistance.cpp
+	"MinDistance.h"
+
+1493209882 source:c:\users\michael\desktop\cab301 assignment 2\src\mindistance2.cpp
+	"MinDistance2.h"
+
