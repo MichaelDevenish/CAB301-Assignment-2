@@ -6,8 +6,9 @@ using namespace std;
 
 int main()
 {
-    MinDistance dist = MinDistance();
+    int arr[] = {1,2,5,7,9};
+    string test = MinDistance2::TestEqual(1,arr,5);
 
-    cout << "Hello world!" << endl;
+    cout << test << endl;
     return 0;
 }
