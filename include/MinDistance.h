@@ -1,6 +1,8 @@
 #ifndef MINDISTANCE_H
 #define MINDISTANCE_H
 
+#include <limits>
+#include <cmath>
 
 class MinDistance
 {

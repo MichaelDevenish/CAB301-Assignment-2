@@ -10,7 +10,7 @@ MinDistance2::~MinDistance2()
     //dtor
 }
 
-int MinDistance2::MinDistanceTwo(int input[], int inputSize){
+int MinDistance2::MinDistance(int input[], int inputSize){
     int dmin = std::numeric_limits<int>::max();
     for (int i = 0; i < inputSize-1; i++){
         for (int j = i+1; j < inputSize; j++ ){
@@ -23,6 +23,21 @@ int MinDistance2::MinDistanceTwo(int input[], int inputSize){
     return dmin;
 }
 
+int MinDistance2::MinDistanceModified(int input[], int inputSize){
+    int operations = 0;
+    int dmin = std::numeric_limits<int>::max();
+    for (int i = 0; i < inputSize-1; i++){
+        for (int j = i+1; j < inputSize; j++ ){
+            int temp = std::abs(input[i]-input[j]); //basic operation
+            operations++; //(n-1)^2
+            if(temp < dmin){
+                dmin = temp;
+            }
+        }
+    }
+    return operations;
+}
+
 std::string MinDistance2::TestEqual(int expected, int input[], int inputSize){
     std::stringstream output;
     output << "Input: {";
@@ -32,7 +47,7 @@ std::string MinDistance2::TestEqual(int expected, int input[], int inputSize){
             output << ",";
         }
     }
-    int realOutput = MinDistanceTwo(input, inputSize);
+    int realOutput = MinDistance(input, inputSize);
     output << "} " << std::endl << "Expected Output: " << expected <<
     " Observed Output: " << realOutput;
     if(realOutput == expected){
@@ -43,6 +58,7 @@ std::string MinDistance2::TestEqual(int expected, int input[], int inputSize){
     return output.str();
 }
 
-
 std::string MinDistance2::RunTests(){
 }
+
+
