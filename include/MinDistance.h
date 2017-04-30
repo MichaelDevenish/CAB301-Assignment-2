@@ -5,10 +5,12 @@
 class MinDistance
 {
     public:
-        MinDistance();
-        virtual ~MinDistance();
+        static int MinDistanceOne(int input[], int inputSize);
+
 
     protected:
+        MinDistance();
+        virtual ~MinDistance();
 
     private:
 };
