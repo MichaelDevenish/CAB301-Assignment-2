@@ -9,7 +9,7 @@
 class MinDistance2
 {
     public:
-        static int MinDistance(int input[], int inputSize);
+        static int MinDistanceTwo(int input[], int inputSize);
         static std::string TestEqual(int expected, int input[], int inputSize); //input: \nexpected output: , observed output:  (TEST PASSED) //throw exception if failed
         static std::string RunTests();
         //TEST CODE MUST BE WRITTEN IN MAIN SINCE THEY MUST RUN ON THE SAME DATA

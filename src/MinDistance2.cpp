@@ -10,7 +10,7 @@ MinDistance2::~MinDistance2()
     //dtor
 }
 
-int MinDistance2::MinDistance(int input[], int inputSize){
+int MinDistance2::MinDistanceTwo(int input[], int inputSize){
     int dmin = std::numeric_limits<int>::max();
     for (int i = 0; i < inputSize-1; i++){
         for (int j = i+1; j < inputSize; j++ ){
@@ -47,18 +47,22 @@ std::string MinDistance2::TestEqual(int expected, int input[], int inputSize){
             output << ",";
         }
     }
-    int realOutput = MinDistance(input, inputSize);
+    int realOutput = MinDistanceTwo(input, inputSize);
     output << "} " << std::endl << "Expected Output: " << expected <<
     " Observed Output: " << realOutput;
     if(realOutput == expected){
-        output << " (TEST PASSED)";
+        output << " (TEST PASSED)\n";
     }else{
-        output << " (TEST FAILED)";
+        output << " (TEST FAILED)\n";
     }
     return output.str();
 }
 
 std::string MinDistance2::RunTests(){
+    std::string output = "";
+    int arr1[] = {1,2,3,4,5};
+    output += "TEST ONE: "+ TestEqual(1,arr1,5);
+    return output;
 }
 
 
