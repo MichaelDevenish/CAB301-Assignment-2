@@ -68,8 +68,8 @@ void runTests(){
 
 int main()
 {
-    //OperationCount(10000,1000);
-    //OperationTime(10000,1000,10);
+    OperationCount(10000,100);
+    OperationTime(10000,100,10);
     runTests();
 
     return 0;
