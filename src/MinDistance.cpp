@@ -56,5 +56,8 @@ std::string MinDistance::TestEqual(int expected, int input[], int inputSize){
 }
 
 std::string MinDistance::RunTests(){
-
+    std::string output = "";
+    int arr1[] = {1,2,3,4,5};
+    output += "TEST ONE: "+ TestEqual(1,arr1,5);
+    return output;
 }

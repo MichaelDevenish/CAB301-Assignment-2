@@ -58,13 +58,20 @@ void OperationTime(int setSize, int testJump,int numRepeats){
     myfile.close();
 }
 
+void runTests(){
+    string result = "Algorithm 1 Tests: \n";
+    result += MinDistance::RunTests();
+    result += "\nAlgorithm 2 Tests: \n";
+    result += MinDistance2::RunTests();
+    cout << result;
+}
+
 int main()
 {
-    OperationTime(10000,1000,10);
-    int arr[] = {1,2,5,7,9};
-    string test = MinDistance2::RunTests();
+    //OperationCount(10000,1000);
+    //OperationTime(10000,1000,10);
+    runTests();
 
-    cout << test << endl;
     return 0;
 }
 
