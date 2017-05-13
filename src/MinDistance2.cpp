@@ -82,5 +82,7 @@ std::string MinDistance2::RunTests(){
     output += "TEST TEN: "+ TestEqual(5,arr10,4);
     int arr11[] = {1};
     output += "TEST ELEVEN: "+ TestEqual(std::numeric_limits<int>::max(),arr11,1);
+    int arr12[] = {1,1,1};
+    output += "TEST TWELVE: "+ TestEqual(0,arr12,3);
     return output;
 }
