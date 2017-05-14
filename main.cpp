@@ -15,7 +15,7 @@ void OperationCount(int setSize, int testJump){
     for(int i = 0; i <= setSize; i += testJump){
         int testArray[i];
         for(int e = 0; e < i; e++){
-            int c = rand() % i;
+            int c = rand();
             testArray[e] = c;
         }
         myfile << i;
@@ -36,7 +36,7 @@ void OperationTime(int setSize, int testJump,int numRepeats){
         int testArray[numRepeats][i];
         for(int j = 0;  j < numRepeats; j++){
             for(int e = 0; e < i; e++){
-                int c = rand() % i;
+                int c = rand();
                 testArray[j][e] = c;
             }
         }
@@ -68,7 +68,7 @@ void runTests(){
 
 int main()
 {
-    //OperationCount(10000,100);
+    OperationCount(10000,100);
    // OperationTime(10000,100,10);
     runTests();
 

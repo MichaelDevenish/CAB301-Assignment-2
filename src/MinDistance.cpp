@@ -26,9 +26,12 @@ int MinDistance::MinDistanceModified(int input[], int inputSize){
     int dmin = std::numeric_limits<int>::max();
     for (int i = 0; i < inputSize; i++){
         for (int j = 0; j < inputSize; j++){
-            operations++;
-            if ((i != j) && (std::abs(input[i] - input[j]) < dmin)){
-                dmin = std::abs(input[i] - input[j]);
+            if (i != j){
+                operations++;
+                if (std::abs(input[i] - input[j]) < dmin){
+                    dmin = std::abs(input[i] - input[j]);
+                    operations++;
+                }
             }
         }
     }
